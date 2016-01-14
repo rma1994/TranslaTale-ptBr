@@ -38,4 +38,24 @@
             PictureBox1.Visible = True
         End If
     End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        Process.Start("https://github.com/rma1994/TranslaTale-ptBr")
+    End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 End Class

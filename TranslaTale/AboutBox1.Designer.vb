@@ -38,6 +38,8 @@ Partial Class AboutBox1
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel.SuspendLayout()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,6 +48,8 @@ Partial Class AboutBox1
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.LinkLabel3)
+        Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.LinkLabel2)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -210,6 +214,27 @@ Partial Class AboutBox1
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.SteelBlue
+        Me.LinkLabel3.Location = New System.Drawing.Point(172, 96)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(53, 13)
+        Me.LinkLabel3.TabIndex = 9
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Rma1994"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 96)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(167, 13)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "Support to portuguese accents by"
+        '
         'AboutBox1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -248,5 +273,6 @@ Partial Class AboutBox1
     Friend WithEvents TableLayoutPanel As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-
+    Friend WithEvents LinkLabel3 As LinkLabel
+    Friend WithEvents Label8 As Label
 End Class
