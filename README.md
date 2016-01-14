@@ -1,37 +1,23 @@
-# TranslaTale
-TranslaTale - An Undertale translation helper!
+#TranslaTale
 
+TranslaTale - An Undertale translation helper!
 This little tool is aimed to translators and modders.
 
-Compiling TranslaTale
 ====================
-TranslaTale has been developed using VisualBasic.NET (MSVS2010 for Desktop)
 
-You can get VB.NET Express 2010 from here:
+#Disclaimer:
+This Software was developed by AlexWaveDiver, you can check the original version here:
 
-https://www.visualstudio.com/en-us/products/visual-studio-express-vs
-
-
-TO-DO
-====================
-* ~~Search~~ Done!
-* Text animation
-* A Preview for in-battle texts
-* Improve the preview rendering time
-* Version Control and backup
-* A DIFF viewer for versioned files
-
-
-Known Issues
-====================
-* There is no word wrap for long sentences.
-
-If you have an unaddressed issue, feel free to submit it here:
-
-https://github.com/AlexWaveDiver/TranslaTale/issues
-
+https://github.com/AlexWaveDiver/TranslaTale
 
 ====================
-Thanks to Mika Attila, for providing an incredible tool like GMKTool
+
+#About the pt-Br:
+
+This version support portuguese accents. It will not show the accents on the preview box. Instead it will replace it by the same character without accent. 
+So, if someone type "Olá", the preview box will show "Ola".
+
+====================
+A huge thanks to AlexWaveDiver, for create this usefull tool and as he said "Thanks to Mika Attila, for providing an incredible tool like GMKTool"
 
 https://github.com/crumblingstatue/gmktool
