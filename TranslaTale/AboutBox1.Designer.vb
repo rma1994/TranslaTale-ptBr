@@ -25,6 +25,8 @@ Partial Class AboutBox1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutBox1))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -36,18 +38,20 @@ Partial Class AboutBox1
         Me.LabelVersion = New System.Windows.Forms.Label()
         Me.LabelProductName = New System.Windows.Forms.Label()
         Me.TableLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel.SuspendLayout()
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.LinkLabel4)
+        Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.LinkLabel3)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.LinkLabel2)
@@ -61,6 +65,27 @@ Partial Class AboutBox1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(260, 160)
         Me.Panel1.TabIndex = 1
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.SteelBlue
+        Me.LinkLabel3.Location = New System.Drawing.Point(172, 96)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(53, 13)
+        Me.LinkLabel3.TabIndex = 9
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Rma1994"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 96)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(167, 13)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "Support to portuguese accents by"
         '
         'LinkLabel2
         '
@@ -192,6 +217,16 @@ Partial Class AboutBox1
         Me.TableLayoutPanel.Size = New System.Drawing.Size(396, 258)
         Me.TableLayoutPanel.TabIndex = 0
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(54, 176)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(44, 64)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'LogoPictureBox
         '
         Me.LogoPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -204,36 +239,26 @@ Partial Class AboutBox1
         Me.LogoPictureBox.TabIndex = 0
         Me.LogoPictureBox.TabStop = False
         '
-        'PictureBox1
+        'LinkLabel4
         '
-        Me.PictureBox1.ErrorImage = CType(resources.GetObject("PictureBox1.ErrorImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(54, 176)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(44, 64)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.SteelBlue
+        Me.LinkLabel4.Location = New System.Drawing.Point(162, 120)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(27, 13)
+        Me.LinkLabel4.TabIndex = 11
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "Mex"
         '
-        'LinkLabel3
+        'Label5
         '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.SteelBlue
-        Me.LinkLabel3.Location = New System.Drawing.Point(172, 96)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(53, 13)
-        Me.LinkLabel3.TabIndex = 9
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Rma1994"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 96)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(167, 13)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = "Support to portuguese accents by"
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 120)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(155, 13)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Portuguese accents created by"
         '
         'AboutBox1
         '
@@ -254,8 +279,8 @@ Partial Class AboutBox1
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TableLayoutPanel.ResumeLayout(False)
-        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -275,4 +300,6 @@ Partial Class AboutBox1
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents Label8 As Label
+    Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents Label5 As Label
 End Class

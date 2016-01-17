@@ -883,4 +883,68 @@ Public Class frmMain
     Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
         frmSearch.Show()
     End Sub
+
+    Private Sub TestFontsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TestFontsToolStripMenuItem.Click
+        Dim winPath As String
+        Dim stringsPath As String
+        Dim createFiles As Process
+        Dim uncompressScript As Process
+        Dim executeScript As Process
+
+        Dim filename As String = Application.StartupPath + "\7z.dll"
+        System.IO.File.WriteAllBytes(filename, My.Resources._7z)
+
+        filename = Application.StartupPath + "\newFonts.7z"
+        System.IO.File.WriteAllBytes(filename, My.Resources.newFonts)
+
+        filename = Application.StartupPath + "\7z.exe"
+        System.IO.File.WriteAllBytes(filename, My.Resources._7z1)
+
+        'create the needed files, available on the program resources
+        Dim p As New ProcessStartInfo
+        p.FileName = filename
+        'p.Arguments = "7z.exe x newFonts.7z"
+
+        createFiles = Process.Start(p)
+        createFiles.WaitForExit()
+
+        Dim i As Integer
+        For i = 0 To 4
+            If Not createFiles.HasExited Then
+                createFiles.Refresh()
+            Else
+                Exit For
+            End If
+        Next i
+
+        'uncompress the fonts scripts that will change the fonts.
+        uncompressScript = Process.Start("CMD", "/C 7z.exe x newFonts.7z -y")
+        uncompressScript.WaitForExit()
+
+        Dim i2 As Integer
+        For i2 = 0 To 4
+            If Not uncompressScript.HasExited Then
+                uncompressScript.Refresh()
+            Else
+                Exit For
+            End If
+        Next i2
+
+        'execute the scripts that will change the fonts.
+        executeScript = Process.Start("CMD", "/C start a_testefonts.bat")
+        executeScript.WaitForExit()
+
+        i2 = 0
+        For i2 = 0 To 4
+            If Not executeScript.HasExited Then
+                executeScript.Refresh()
+            Else
+                Exit For
+            End If
+        Next i2
+
+        'executeScript.Start("CMD", "/C 7z.exe x newFonts.7z")
+
+        MsgBox("Process finished", vbInformation)
+    End Sub
 End Class

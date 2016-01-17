@@ -58,4 +58,12 @@
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
+
+    Private Sub Label5_Click_1(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
+        Process.Start("https://github.com/MateusinhoEX")
+    End Sub
 End Class

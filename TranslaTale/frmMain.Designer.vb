@@ -58,10 +58,6 @@ Partial Class frmMain
         Me.ttipUntranslated = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ttipTotal = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.OpenFileDialog2 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
@@ -70,6 +66,10 @@ Partial Class frmMain
         Me.cf3 = New System.Windows.Forms.PictureBox()
         Me.cf2 = New System.Windows.Forms.PictureBox()
         Me.cf1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.c3 = New System.Windows.Forms.PictureBox()
         Me.c2 = New System.Windows.Forms.PictureBox()
         Me.c1 = New System.Windows.Forms.PictureBox()
@@ -77,6 +77,8 @@ Partial Class frmMain
         Me.picTxtBox = New System.Windows.Forms.PictureBox()
         Me.picTxtFlowey = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TestFontsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
@@ -111,25 +113,25 @@ Partial Class frmMain
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.OpenToolStripMenuItem.Text = "&Open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Enabled = False
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.SaveToolStripMenuItem.Text = "&Save"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(100, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.ExitToolStripMenuItem.Text = "&Exit"
         '
         'BookmarksToolStripMenuItem
@@ -154,7 +156,7 @@ Partial Class frmMain
         '
         'ToolsToolStripMenuItem
         '
-        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DumpStringstxtToolStripMenuItem, Me.RepackStringstxtToolStripMenuItem, Me.ToolStripSeparator2, Me.DumpImagesToolStripMenuItem, Me.RepackImagesToolStripMenuItem})
+        Me.ToolsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DumpStringstxtToolStripMenuItem, Me.RepackStringstxtToolStripMenuItem, Me.ToolStripSeparator2, Me.DumpImagesToolStripMenuItem, Me.RepackImagesToolStripMenuItem, Me.ToolStripSeparator3, Me.TestFontsToolStripMenuItem})
         Me.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem"
         Me.ToolsToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.ToolsToolStripMenuItem.Text = "&Tools"
@@ -293,8 +295,8 @@ Partial Class frmMain
         Me.ttipTranslated.AutoSize = False
         Me.ttipTranslated.BackColor = System.Drawing.Color.LightGreen
         Me.ttipTranslated.BorderSides = CType((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
         Me.ttipTranslated.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter
         Me.ttipTranslated.Name = "ttipTranslated"
         Me.ttipTranslated.Size = New System.Drawing.Size(50, 17)
@@ -305,8 +307,8 @@ Partial Class frmMain
         Me.ttipUntranslated.AutoSize = False
         Me.ttipUntranslated.BackColor = System.Drawing.Color.LightSalmon
         Me.ttipUntranslated.BorderSides = CType((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
         Me.ttipUntranslated.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter
         Me.ttipUntranslated.Name = "ttipUntranslated"
         Me.ttipUntranslated.Size = New System.Drawing.Size(50, 17)
@@ -316,8 +318,8 @@ Partial Class frmMain
         '
         Me.ttipTotal.AutoSize = False
         Me.ttipTotal.BorderSides = CType((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
-                    Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) _
+            Or System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom), System.Windows.Forms.ToolStripStatusLabelBorderSides)
         Me.ttipTotal.BorderStyle = System.Windows.Forms.Border3DStyle.SunkenOuter
         Me.ttipTotal.Name = "ttipTotal"
         Me.ttipTotal.Size = New System.Drawing.Size(50, 17)
@@ -334,45 +336,6 @@ Partial Class frmMain
         Me.ToolStrip1.Size = New System.Drawing.Size(679, 25)
         Me.ToolStrip1.TabIndex = 49
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = Global.TranslaTale.My.Resources.Resources.ico_open
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton1.Text = "Open"
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Enabled = False
-        Me.ToolStripButton2.Image = Global.TranslaTale.My.Resources.Resources.ico_save
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton2.Text = "Save"
-        '
-        'ToolStripButton4
-        '
-        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton4.Enabled = False
-        Me.ToolStripButton4.Image = Global.TranslaTale.My.Resources.Resources.ico_step
-        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton4.Text = "Jump to line"
-        '
-        'ToolStripButton3
-        '
-        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton3.Enabled = False
-        Me.ToolStripButton3.Image = Global.TranslaTale.My.Resources.Resources.ico_search
-        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
-        Me.ToolStripButton3.Text = "Search"
         '
         'cbFonts
         '
@@ -417,6 +380,45 @@ Partial Class frmMain
         Me.cf1.TabIndex = 50
         Me.cf1.TabStop = False
         Me.cf1.Visible = False
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.TranslaTale.My.Resources.Resources.ico_open
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "Open"
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Enabled = False
+        Me.ToolStripButton2.Image = Global.TranslaTale.My.Resources.Resources.ico_save
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton2.Text = "Save"
+        '
+        'ToolStripButton4
+        '
+        Me.ToolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton4.Enabled = False
+        Me.ToolStripButton4.Image = Global.TranslaTale.My.Resources.Resources.ico_step
+        Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton4.Name = "ToolStripButton4"
+        Me.ToolStripButton4.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton4.Text = "Jump to line"
+        '
+        'ToolStripButton3
+        '
+        Me.ToolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton3.Enabled = False
+        Me.ToolStripButton3.Image = Global.TranslaTale.My.Resources.Resources.ico_search
+        Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton3.Name = "ToolStripButton3"
+        Me.ToolStripButton3.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton3.Text = "Search"
         '
         'c3
         '
@@ -485,6 +487,17 @@ Partial Class frmMain
         Me.PictureBox4.Size = New System.Drawing.Size(652, 158)
         Me.PictureBox4.TabIndex = 5
         Me.PictureBox4.TabStop = False
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(164, 6)
+        '
+        'TestFontsToolStripMenuItem
+        '
+        Me.TestFontsToolStripMenuItem.Name = "TestFontsToolStripMenuItem"
+        Me.TestFontsToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
+        Me.TestFontsToolStripMenuItem.Text = "Test Fonts"
         '
         'frmMain
         '
@@ -590,5 +603,6 @@ Partial Class frmMain
     Friend WithEvents cbFonts As System.Windows.Forms.ComboBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents OptionsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents TestFontsToolStripMenuItem As ToolStripMenuItem
 End Class

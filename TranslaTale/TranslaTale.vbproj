@@ -204,6 +204,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Resources\newFonts.7z" />
+    <None Include="Resources\newFonts.rar" />
+    <None Include="Resources\newFonts.zip" />
     <None Include="TranslaTale_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +257,8 @@
     <None Include="bin\Debug\libgcc_s_dw2-1.dll" />
     <None Include="bin\Debug\gmktool.exe" />
     <None Include="Resources\font3es.png" />
+    <None Include="Resources\7z.dll" />
+    <None Include="Resources\7z.exe" />
     <Content Include="Resources\gmktool.exe" />
     <Content Include="icon_8SA_icon.ico" />
   </ItemGroup>
